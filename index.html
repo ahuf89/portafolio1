@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" href="assets/images/code.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Portafolio</a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="menu">
+            <li><a onclick="toggleMenu()" href="#home">Inicio</a></li>
+            <li><a onclick="toggleMenu()" href="#about">Sobre mi</a></li>
+            <li><a onclick="toggleMenu()" href="#services">Habilidades</a></li>
+            <li><a onclick="toggleMenu()" href="#work">Proyectos</a></li>
+
+            <li><a onclick="toggleMenu()" href="#contact">Contacto</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hola, Soy <br><span>  Alvaro Useche</span></h2>
+            <!-- <h3>Soy frontend Developer</h3> -->
+            <a href="#about" class="btn">Sobre mi</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Sobre mi</h2>
+            <br>
+        </div>
+
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Soy desarrollador Web</h3>
+                <p>Llevo un tiempo con esto del desarrollo web y te cuento que me ha encantado porque es una carrera que conecta a usuarios y empresas ayudando a ambos a obtener una gran cantidad de beneficios. <br><br>Actualmente estoy terminando una carrera
+                    tecnológica llamada Análisis y desarrollo de sistemas de informacion en el SENA.</p>
+            </div>
+            <div class="w50">
+                <img src="assets/images/ui2.png" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Habilidades</h2>
+            <p>El corto tiempo me he desempeñado y he aprendido habilidades relacionadas con el desarrollo web.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="assets/habilities/html.png" alt="">
+                <h2>HTML</h2>
+
+            </div>
+            <div class="servicesBx">
+                <img src="assets/habilities/css.png" alt="">
+                <h2>CSS</h2>
+
+            </div>
+            <div class="servicesBx">
+                <img src="assets/habilities/js.png" alt="">
+                <h2>JavaScript</h2>
+
+            </div>
+            <div class="servicesBx">
+                <img src="assets/habilities/vs.png" alt="">
+                <h2>Vue.js</h2>
+
+            </div>
+            <div class="servicesBx">
+                <img src="assets/habilities/an.png" alt="">
+                <h2>Angular</h2>
+
+            </div>
+            <div class="servicesBx">
+                <img src="assets/habilities/node.png" alt="">
+                <h2>Node.js</h2>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="work">
+        <div class="heading">
+            <h2>Proyectos</h2>
+            <p>Algunos de mis proyectos realizados</p>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="icon-card">
+                    <i class="fab fa-angular"></i>
+                </div>
+                <div class="content-card">
+                    <h2>App de películas</h2>
+                    <p>Aplicacion web realizada en angular</p>
+                    <br>
+                    <a class="btn-card" target="_blank" rel="noopener noreferrer" href="https://example.com/">Ver más...</a>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="icon-card">
+                    <i class="fab fa-vuejs"></i>
+                </div>
+                <div class="content-card">
+                    <h2>Dashboard</h2>
+                    <p>Ejercicio hecho para entender las facilidades de vue.js</p>
+                    <br>
+                    <a class="btn-card" target="_blank" rel="noopener noreferrer" href="https://example.com/">Ver más...</a>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="icon-card">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="content-card">
+                    <h2>App de Comidas</h2>
+                    <p>Aplicacion de domicilios de comidas llamada Domi.</p>
+                    <br>
+                    <a class="btn-card" target="_blank" rel="noopener noreferrer" href="https://example.com/">Ver más...</a>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="icon-card">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="content-card">
+                    <h2>Proyecto 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae alias fugiat libero similique illum aut possimus cum maiores ex temporibus.</p>
+                    <br>
+                    <a class="btn-card" target="_blank" rel="noopener noreferrer" href="https://example.com/">Ver más...</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section class="carousel">
+     
+        <div class="container">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-container mySwiper cont-row">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/01.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non, modi sunt ips.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/02.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non, modi sunt ips.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/03.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non, modi sunt ips.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/04.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non, modi sunt ips.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/05.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non, modi sunt ips.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/06.jpg" alt="">
+                        <div class="card-description">
+                            <div class="card-title">
+                                <h4>Descripción</h4>
+                            </div>
+                            <div class="card-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non, modi sunt ips.</p>
+                            </div>
+                            <div class="card-link">
+                                <a href="#">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- <div class="container">
+   
+        <div class="swiper-container cont-row">
+      
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="icon-card">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="content-card">
+                            <h2>App de películas</h2>
+                            <p>Aplicacion web realizada en angular</p>
+                            <br>
+                            <a class="btn-card" target="_blank" rel="noopener noreferrer" href="https://example.com/">Ver más...</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="icon-card">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="content-card">
+                            <h2>App de películas</h2>
+                            <p>Aplicacion web realizada en angular</p>
+                            <br>
+                            <a class="btn-card" target="_blank" rel="noopener noreferrer" href="https://example.com/">Ver más...</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="icon-card">
+                            <i class="fab fa-vuejs"></i>
+                        </div>
+                        <div class="content-card">
+                            <h2>Dashboard</h2>
+                            <p>Ejercicio hecho para entender las facilidades de vue.js</p>
+                            <br>
+                            <a class="btn-card" target="_blank" rel="noopener noreferrer" href="https://example.com/">Ver más...</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="icon-card">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="content-card">
+                            <h2>App de películas</h2>
+                            <p>Aplicacion web realizada en angular</p>
+                            <br>
+                            <a class="btn-card" target="_blank" rel="noopener noreferrer" href="https://example.com/">Ver más...</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div> -->
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contacto</h2>
+
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Informacion de Contacto</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Ubicación</h3>
+                            <p>Bogotá<br>Colombia</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-mobile-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Telefono</h3>
+                            <p>+57 305 745 15 38</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Correo</h3>
+                            <p>jboalvarouseche@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Escribeme</h3>
+                    <input type="text" name="" placeholder="Nombre" required>
+                    <input type="email" name="" placeholder="Correo" required>
+                    <textarea placeholder="Tu mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+
+        function toggleMenu() {
+            let menuToggle = document.querySelector('.toggle');
+            let menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+
+</html>
